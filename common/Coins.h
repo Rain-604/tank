@@ -1,7 +1,7 @@
 #ifndef COIN_H
 #define COIN_H
 
-#include "DrawObj.h"
+#include "drawObj.h"
 
 class Coin : public DrawObj {
 private:

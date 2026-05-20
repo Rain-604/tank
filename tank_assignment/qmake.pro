@@ -2,11 +2,11 @@ TEMPLATE = app
 
 # Executable Name
 TARGET = TankAssignment
-CONFIG += debug
+CONFIG += debug c++17
 
 # Force .exe extension on Windows
 win32 {
-    TARGET = TankAssignment
+    TARGET = TankAssignment.exe
 }
 
 # Destination
@@ -21,13 +21,13 @@ HEADERS += ../common/Shader.h \
            ../common/Texture.h \
            ../common/SphericalCameraManipulator.h \
            ../common/map.h \
-           ../common/DrawObj.h \
+           ../common/drawObj.h \
            ../common/DrawPlayer.h \
            ../common/DrawEnemy.h \
            ../common/drawBullet.h \
            ../common/Coins.h \
            Game.h \
-           drawBullet.h \
+
 
 
 # Sources
@@ -44,5 +44,5 @@ SOURCES += main.cpp \
 INCLUDEPATH += ./ \
                ../common/
         
-# Libraries for Windows/MSYS2
-LIBS += -lglew32 -lfreeglut -lopengl32
+win32: LIBS += -lglew32 -lfreeglut -lopengl32
+unix: LIBS += -lGLEW -lGL -lGLU -lglut

@@ -1,7 +1,7 @@
 #ifndef DRAWPLAYER_H
 #define DRAWPLAYER_H
 
-#include "DrawObj.h"
+#include "drawObj.h"
 
 class DrawPlayer : public DrawObj {
 public:

@@ -1,7 +1,7 @@
 #ifndef DRAWENEMY_H
 #define DRAWENEMY_H
 
-#include "DrawObj.h"
+#include "drawObj.h"
 
 class DrawEnemy : public DrawObj {
 public:
